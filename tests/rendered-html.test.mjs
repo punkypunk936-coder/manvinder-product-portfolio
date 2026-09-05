@@ -31,6 +31,9 @@ test("renders the complete product portfolio", async () => {
   assert.match(html, /Punky Trading Agent/);
   assert.match(html, /Telegram Brain/);
   assert.match(html, /Writing Desk/);
+  assert.match(html, /35-second walkthrough/);
+  assert.match(html, /product-demo-telegram-brain-writing-desk-35s\.mp4/);
+  assert.match(html, /<video/i);
   assert.match(html, /I move fast\. I do not ship slop\./);
   assert.match(html, /Unfinished projects stay local/);
 });

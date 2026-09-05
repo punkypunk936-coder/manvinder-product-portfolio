@@ -199,6 +199,34 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="walkthrough" aria-labelledby="walkthrough-title">
+        <div className="section-shell walkthrough-inner">
+          <div className="walkthrough-copy">
+            <p className="kicker">35-second walkthrough</p>
+            <h2 id="walkthrough-title">Telegram Brain to Writing Desk.</h2>
+            <p>
+              Find a saved image by describing it, then review, format, preview and publish an
+              article from one quiet workflow.
+            </p>
+          </div>
+          <figure className="walkthrough-player">
+            <video
+              controls
+              playsInline
+              preload="metadata"
+              poster={asset("product-demo-poster.png")}
+              aria-label="35-second walkthrough of Telegram Brain and Writing Desk"
+            >
+              <source
+                src={asset("product-demo-telegram-brain-writing-desk-35s.mp4")}
+                type="video/mp4"
+              />
+            </video>
+            <figcaption>Semantic media search, draft review, rich editing and publishing.</figcaption>
+          </figure>
+        </div>
+      </section>
+
       <section id="writing-desk" className="product product-warm" aria-labelledby="writing-title">
         <div className="section-shell">
           <div className="product-heading">
