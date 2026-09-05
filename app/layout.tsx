@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://punkypunk936-coder.github.io/manvinder-product-portfolio/" },
   openGraph: {
     title: "Manvinder Arora | Vibe-Coded Product Portfolio",
-    description: "I build tools for problems I actually have. See Punky, Telegram Brain and the Writing Desk.",
+    description: "Three focused products for market intelligence, searchable personal knowledge and frictionless publishing.",
     type: "website",
     images: [{ url: "https://punkypunk936-coder.github.io/manvinder-product-portfolio/og.png", width: 1200, height: 630, alt: "Manvinder Arora product portfolio" }],
   },
