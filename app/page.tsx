@@ -162,14 +162,26 @@ export default function Home() {
 
           <div className="product-actions">
             <span className="status-chip">3,500+ captures indexed</span>
+            <a className="text-link" href={asset("telegram-brain-search-demo-15s.mp4")} target="_blank" rel="noreferrer">
+              Watch 15-second demo <Arrow />
+            </a>
             <a className="text-link" href="https://github.com/punkypunk936-coder/telegram-brain" target="_blank" rel="noreferrer">
               Public GitHub repo <Arrow />
             </a>
           </div>
 
-          <a className="product-shot brain-shot" href={asset("telegram-brain-current.png")} target="_blank" rel="noreferrer" aria-label="Open the current Telegram Brain interface screenshot">
-            <img src={asset("telegram-brain-current.png")} alt="Current Telegram Brain interface with archive search, media filters, topic filters and pinned items" width="2722" height="914" loading="lazy" />
-          </a>
+          <figure className="product-shot brain-shot product-video">
+            <video
+              controls
+              playsInline
+              preload="metadata"
+              poster={asset("telegram-brain-demo-poster.png")}
+              aria-label="15-second Telegram Brain search demonstration"
+            >
+              <source src={asset("telegram-brain-search-demo-15s.mp4")} type="video/mp4" />
+            </video>
+            <figcaption>Describe the saved image, search the archive, get the matching result.</figcaption>
+          </figure>
 
           <div className="product-proof">
             <article>
@@ -199,34 +211,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="walkthrough" aria-labelledby="walkthrough-title">
-        <div className="section-shell walkthrough-inner">
-          <div className="walkthrough-copy">
-            <p className="kicker">35-second walkthrough</p>
-            <h2 id="walkthrough-title">Telegram Brain to Writing Desk.</h2>
-            <p>
-              Find a saved image by describing it, then review, format, preview and publish an
-              article from one quiet workflow.
-            </p>
-          </div>
-          <figure className="walkthrough-player">
-            <video
-              controls
-              playsInline
-              preload="metadata"
-              poster={asset("product-demo-poster.png")}
-              aria-label="35-second walkthrough of Telegram Brain and Writing Desk"
-            >
-              <source
-                src={asset("product-demo-telegram-brain-writing-desk-35s.mp4")}
-                type="video/mp4"
-              />
-            </video>
-            <figcaption>Semantic media search, draft review, rich editing and publishing.</figcaption>
-          </figure>
-        </div>
-      </section>
-
       <section id="writing-desk" className="product product-warm" aria-labelledby="writing-title">
         <div className="section-shell">
           <div className="product-heading">
@@ -242,14 +226,26 @@ export default function Home() {
 
           <div className="product-actions">
             <span className="status-chip">Runs quietly on my Mac</span>
+            <a className="text-link" href={asset("writing-desk-edit-publish-demo-18s.mp4")} target="_blank" rel="noreferrer">
+              Watch 18-second demo <Arrow />
+            </a>
             <a className="text-link" href="https://github.com/punkypunk936-coder/x-to-substack-pipeline" target="_blank" rel="noreferrer">
               Public GitHub repo <Arrow />
             </a>
           </div>
 
-          <a className="product-shot writing-shot" href={asset("writing-desk-current.png")} target="_blank" rel="noreferrer" aria-label="Open the current Writing Desk interface screenshot">
-            <img src={asset("writing-desk-current.png")} alt="Current Writing Desk interface showing the X article capture, draft pipeline and rich editor" width="1440" height="900" loading="lazy" />
-          </a>
+          <figure className="product-shot writing-shot product-video">
+            <video
+              controls
+              playsInline
+              preload="metadata"
+              poster={asset("writing-desk-demo-poster.png")}
+              aria-label="18-second Writing Desk editing and publishing demonstration"
+            >
+              <source src={asset("writing-desk-edit-publish-demo-18s.mp4")} type="video/mp4" />
+            </video>
+            <figcaption>Review the draft, preview it, format the article, then publish or schedule.</figcaption>
+          </figure>
 
           <div className="product-proof">
             <article>

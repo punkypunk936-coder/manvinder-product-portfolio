@@ -31,9 +31,12 @@ test("renders the complete product portfolio", async () => {
   assert.match(html, /Punky Trading Agent/);
   assert.match(html, /Telegram Brain/);
   assert.match(html, /Writing Desk/);
-  assert.match(html, /35-second walkthrough/);
-  assert.match(html, /product-demo-telegram-brain-writing-desk-35s\.mp4/);
-  assert.match(html, /<video/i);
+  assert.match(html, /Watch 15-second demo/);
+  assert.match(html, /telegram-brain-search-demo-15s\.mp4/);
+  assert.match(html, /Watch 18-second demo/);
+  assert.match(html, /writing-desk-edit-publish-demo-18s\.mp4/);
+  assert.equal((html.match(/<video/g) ?? []).length, 2);
+  assert.doesNotMatch(html, /35-second walkthrough/);
   assert.match(html, /I move fast\. I do not ship slop\./);
   assert.match(html, /Unfinished projects stay local/);
 });
