@@ -25,6 +25,8 @@ const products = [
 ];
 
 const Arrow = () => <span aria-hidden="true">↗</span>;
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+const asset = (name: string) => `${basePath}/${name}`;
 
 export default function Home() {
   return (
@@ -36,7 +38,7 @@ export default function Home() {
         </a>
         <nav aria-label="Primary navigation">
           <a href="#work">Products</a>
-          <a href="#method">Method</a>
+          <a href="#vibe-coding">Vibe coding</a>
         </nav>
         <a className="header-link" href="https://x.com/0xgoodie" target="_blank" rel="noreferrer">
           X / @0xgoodie <Arrow />
@@ -45,17 +47,17 @@ export default function Home() {
 
       <section className="hero" aria-labelledby="hero-title">
         <div className="hero-media" aria-hidden="true">
-          <img src="/punky-current.png" alt="" width="1440" height="900" />
-          <img src="/telegram-brain-current.png" alt="" width="2722" height="914" />
-          <img src="/writing-desk-current.png" alt="" width="1440" height="900" />
+          <img src={asset("punky-current.png")} alt="" width="1440" height="900" />
+          <img src={asset("telegram-brain-current.png")} alt="" width="2722" height="914" />
+          <img src={asset("writing-desk-current.png")} alt="" width="1440" height="900" />
         </div>
         <div className="hero-shade" aria-hidden="true" />
         <div className="hero-inner">
-          <p className="eyebrow">Manvinder Arora / AI product builder</p>
-          <h1 id="hero-title">I build tools for the work I actually do.</h1>
+          <p className="eyebrow">Manvinder Arora / Vibe-coded products</p>
+          <h1 id="hero-title">I build tools for problems I actually have.</h1>
           <p className="hero-copy">
-            Three working products across market intelligence, personal knowledge and publishing.
-            Each started with friction in my own workflow and became a system I use.
+            I move quickly, use agents heavily and keep projects local until the full loop works.
+            These are the three products that made it past that bar.
           </p>
           <div className="hero-actions">
             <a className="button button-light" href="#work">See the products</a>
@@ -64,9 +66,9 @@ export default function Home() {
             </a>
           </div>
           <div className="hero-proof" aria-label="Portfolio summary">
-            <span>3 working systems</span>
-            <span>Built end to end</span>
-            <span>Designed through daily use</span>
+            <span>3 core products</span>
+            <span>Local until ready</span>
+            <span>Public repositories</span>
           </div>
         </div>
       </section>
@@ -91,7 +93,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="punky" className="product product-dark" aria-labelledby="punky-title">
+      <section id="punky" className="product product-cool" aria-labelledby="punky-title">
         <div className="section-shell">
           <div className="product-heading">
             <div>
@@ -109,12 +111,12 @@ export default function Home() {
               Open live product <Arrow />
             </a>
             <a className="text-link" href="https://github.com/punkypunk936-coder/crypto-trading-agent" target="_blank" rel="noreferrer">
-              View source <Arrow />
+              Public GitHub repo <Arrow />
             </a>
           </div>
 
           <a className="product-shot dark-shot" href="https://punkypunk936-coder.github.io/crypto-trading-agent/" target="_blank" rel="noreferrer" aria-label="Open the current Punky Trading Agent">
-            <img src="/punky-current.png" alt="Current Punky Trading Agent interface showing a stock decision, entry level, profit level, invalidation and market context" width="1440" height="900" loading="lazy" />
+            <img src={asset("punky-current.png")} alt="Current Punky Trading Agent interface showing a stock decision, entry level, profit level, invalidation and market context" width="1440" height="900" loading="lazy" />
           </a>
 
           <div className="product-proof">
@@ -161,12 +163,12 @@ export default function Home() {
           <div className="product-actions">
             <span className="status-chip">3,500+ captures indexed</span>
             <a className="text-link" href="https://github.com/punkypunk936-coder/telegram-brain" target="_blank" rel="noreferrer">
-              View source <Arrow />
+              Public GitHub repo <Arrow />
             </a>
           </div>
 
-          <a className="product-shot brain-shot" href="/telegram-brain-current.png" target="_blank" rel="noreferrer" aria-label="Open the current Telegram Brain interface screenshot">
-            <img src="/telegram-brain-current.png" alt="Current Telegram Brain interface with archive search, media filters, topic filters and pinned items" width="2722" height="914" loading="lazy" />
+          <a className="product-shot brain-shot" href={asset("telegram-brain-current.png")} target="_blank" rel="noreferrer" aria-label="Open the current Telegram Brain interface screenshot">
+            <img src={asset("telegram-brain-current.png")} alt="Current Telegram Brain interface with archive search, media filters, topic filters and pinned items" width="2722" height="914" loading="lazy" />
           </a>
 
           <div className="product-proof">
@@ -213,12 +215,12 @@ export default function Home() {
           <div className="product-actions">
             <span className="status-chip">Runs quietly on my Mac</span>
             <a className="text-link" href="https://github.com/punkypunk936-coder/x-to-substack-pipeline" target="_blank" rel="noreferrer">
-              View source <Arrow />
+              Public GitHub repo <Arrow />
             </a>
           </div>
 
-          <a className="product-shot writing-shot" href="/writing-desk-current.png" target="_blank" rel="noreferrer" aria-label="Open the current Writing Desk interface screenshot">
-            <img src="/writing-desk-current.png" alt="Current Writing Desk interface showing the X article capture, draft pipeline and rich editor" width="1440" height="900" loading="lazy" />
+          <a className="product-shot writing-shot" href={asset("writing-desk-current.png")} target="_blank" rel="noreferrer" aria-label="Open the current Writing Desk interface screenshot">
+            <img src={asset("writing-desk-current.png")} alt="Current Writing Desk interface showing the X article capture, draft pipeline and rich editor" width="1440" height="900" loading="lazy" />
           </a>
 
           <div className="product-proof">
@@ -249,28 +251,29 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="method" className="method" aria-labelledby="method-title">
-        <div className="section-shell method-grid">
-          <div className="section-intro">
-            <p className="kicker">How I build</p>
-            <h2 id="method-title">The model is part of the product, not the product.</h2>
+      <section id="vibe-coding" className="vibe" aria-labelledby="vibe-title">
+        <div className="section-shell">
+          <div className="vibe-heading">
+            <p className="kicker">Vibe coding, honestly</p>
+            <h2 id="vibe-title">Move fast. Keep it useful. Delete the slop.</h2>
+            <p>
+              I have ADHD. Long, drawn-out workflows lose me, so I use several agents and automate
+              as much of the repetitive work as I can. That gets me from an idea to something real
+              very quickly. It does not lower the bar for what gets shipped.
+            </p>
           </div>
-          <div className="method-list">
+          <div className="vibe-notes">
             <article>
               <span>01</span>
-              <div><h3>Start with repeated friction</h3><p>I build around a job I already do often enough to know where the real pain lives.</p></div>
+              <div><h3>I do not want to make slop</h3><p>If a project stops solving a real problem and turns into a pile of features, I cut it. A smaller useful thing is better than a bigger fake product.</p></div>
             </article>
             <article>
               <span>02</span>
-              <div><h3>Use AI where judgment is expensive</h3><p>Vision, synthesis and retrieval do useful cognitive work; deterministic checks protect exactness and trust.</p></div>
+              <div><h3>Unfinished work stays local</h3><p>I keep projects on localhost or as local software until the complete path works. Deployment is the last step, not a way to make an unfinished build look real.</p></div>
             </article>
             <article>
               <span>03</span>
-              <div><h3>Close the entire loop</h3><p>A useful product gets from input to action. I keep removing the manual handoffs that break that path.</p></div>
-            </article>
-            <article>
-              <span>04</span>
-              <div><h3>Let daily use expose the design</h3><p>I use the systems myself, notice where they slow me down, and ship the next improvement from that evidence.</p></div>
+              <div><h3>Agents help me keep momentum</h3><p>I let agents carry research, coding and repetitive checks. I still make the product calls, use the result myself and decide what survives.</p></div>
             </article>
           </div>
         </div>
@@ -279,8 +282,8 @@ export default function Home() {
       <section className="contact" aria-labelledby="contact-title">
         <div className="section-shell contact-inner">
           <p className="kicker">Contact</p>
-          <h2 id="contact-title">I like hard product problems and fast feedback loops.</h2>
-          <p>If you care about taste, usefulness and the pace between an idea and a working build, let&apos;s talk.</p>
+          <h2 id="contact-title">I like turning annoying workflows into working software.</h2>
+          <p>If you care about speed, honest product judgment and builds that are actually useful, let&apos;s talk.</p>
           <div className="contact-links">
             <a href="https://x.com/0xgoodie" target="_blank" rel="noreferrer">X / @0xgoodie <Arrow /></a>
             <a href="https://t.me/manvinder0" target="_blank" rel="noreferrer">Telegram / @manvinder0 <Arrow /></a>

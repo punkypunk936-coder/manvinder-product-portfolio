@@ -1,0 +1,2 @@
+:HL["/manvinder-product-portfolio/_next/static/chunks/07z7a3ayno8vq.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"6PRCY9Wx7Nwjo2G3Kz0Pn"}

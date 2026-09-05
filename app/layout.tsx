@@ -13,21 +13,21 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Manvinder Arora | AI Product Builder",
-  description: "Three working products across AI market intelligence, personal knowledge and publishing automation.",
-  metadataBase: new URL("https://manvinder-product-portfolio.punkypunk936.chatgpt.site"),
-  alternates: { canonical: "/" },
+  title: "Manvinder Arora | Vibe-Coded Product Portfolio",
+  description: "Three working products built for real personal workflows across markets, personal knowledge and publishing.",
+  metadataBase: new URL("https://punkypunk936-coder.github.io/manvinder-product-portfolio/"),
+  alternates: { canonical: "https://punkypunk936-coder.github.io/manvinder-product-portfolio/" },
   openGraph: {
-    title: "Manvinder Arora | AI Product Builder",
-    description: "I build tools for the work I actually do. See Punky, Telegram Brain and the Writing Desk.",
+    title: "Manvinder Arora | Vibe-Coded Product Portfolio",
+    description: "I build tools for problems I actually have. See Punky, Telegram Brain and the Writing Desk.",
     type: "website",
-    images: [{ url: "/og.png", width: 1200, height: 630, alt: "Manvinder Arora product portfolio" }],
+    images: [{ url: "https://punkypunk936-coder.github.io/manvinder-product-portfolio/og.png", width: 1200, height: 630, alt: "Manvinder Arora product portfolio" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Manvinder Arora | AI Product Builder",
-    description: "Three working products across market intelligence, personal knowledge and publishing.",
-    images: ["/og.png"],
+    title: "Manvinder Arora | Vibe-Coded Product Portfolio",
+    description: "Three working products built for real personal workflows.",
+    images: ["https://punkypunk936-coder.github.io/manvinder-product-portfolio/og.png"],
   },
 };
 

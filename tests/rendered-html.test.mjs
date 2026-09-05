@@ -26,12 +26,12 @@ test("renders the complete product portfolio", async () => {
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
 
   const html = await response.text();
-  assert.match(html, /<title>Manvinder Arora \| AI Product Builder<\/title>/i);
-  assert.match(html, /I build tools for the work I actually do\./);
+  assert.match(html, /<title>Manvinder Arora \| Vibe-Coded Product Portfolio<\/title>/i);
+  assert.match(html, /I build tools for problems I actually have\./);
   assert.match(html, /Punky Trading Agent/);
   assert.match(html, /Telegram Brain/);
   assert.match(html, /Writing Desk/);
-  assert.match(html, /The model is part of the product, not the product\./);
+  assert.match(html, /Move fast\. Keep it useful\. Delete the slop\./);
 });
 
 test("links to the current products and contains no stale portfolio material", async () => {
@@ -43,6 +43,7 @@ test("links to the current products and contains no stale portfolio material", a
   assert.match(html, /punkypunk936-coder\/x-to-substack-pipeline/);
   assert.match(html, /x\.com\/0xgoodie/);
   assert.match(html, /t\.me\/manvinder0/);
+  assert.match(html, /Public GitHub repo/);
   assert.doesNotMatch(html, /Meme Scout/i);
   assert.doesNotMatch(html, /Resume|CV|Career timeline/i);
 });
