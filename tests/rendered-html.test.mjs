@@ -41,6 +41,7 @@ test("links to the current products and contains no stale portfolio material", a
   assert.match(html, /punkypunk936-coder\.github\.io\/crypto-trading-agent/);
   assert.match(html, /punkypunk936-coder\/telegram-brain/);
   assert.match(html, /punkypunk936-coder\/x-to-substack-pipeline/);
+  assert.match(html, /punkypunk936-coder\/manvinder-product-portfolio/);
   assert.match(html, /x\.com\/0xgoodie/);
   assert.match(html, /t\.me\/manvinder0/);
   assert.match(html, /Public GitHub repo/);

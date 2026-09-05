@@ -293,7 +293,7 @@ export default function Home() {
 
       <footer>
         <span>Manvinder Arora</span>
-        <span>Product work / 2026</span>
+        <a href="https://github.com/punkypunk936-coder/manvinder-product-portfolio" target="_blank" rel="noreferrer">Portfolio source <Arrow /></a>
       </footer>
     </main>
   );

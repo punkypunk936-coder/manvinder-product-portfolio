@@ -124,6 +124,7 @@ nav a:hover, .header-link:hover { color: var(--ink); }
 .contact-links { margin-top: 32px; }
 .contact-links a { display: inline-flex; min-height: 44px; align-items: center; gap: 8px; border-bottom: 1px solid #7d899c; color: var(--ink); font-size: .86rem; font-weight: 730; text-decoration: none; }
 footer { display: flex; justify-content: space-between; gap: 20px; padding: 24px max(18px, calc((100vw - 1280px) / 2)); color: #74756f; background: var(--paper-bright); font-family: var(--font-geist-mono), monospace; font-size: .64rem; text-transform: uppercase; }
+footer a { color: var(--ink); font-weight: 700; text-decoration: none; }
 
 @media (max-width: 900px) {
   .product-heading, .vibe-heading { grid-template-columns: 1fr; gap: 28px; }
