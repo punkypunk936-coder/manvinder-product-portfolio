@@ -31,7 +31,8 @@ test("renders the complete product portfolio", async () => {
   assert.match(html, /Punky Trading Agent/);
   assert.match(html, /Telegram Brain/);
   assert.match(html, /Writing Desk/);
-  assert.match(html, /Move fast\. Keep it useful\. Delete the slop\./);
+  assert.match(html, /I move fast\. I do not ship slop\./);
+  assert.match(html, /Unfinished projects stay local/);
 });
 
 test("links to the current products and contains no stale portfolio material", async () => {

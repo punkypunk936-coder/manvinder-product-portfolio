@@ -122,15 +122,15 @@ export default function Home() {
           <div className="product-proof">
             <article>
               <span>The friction</span>
-              <p>Prices, catalysts, chart context and trade plans lived in separate places. A dashboard could show more data without making the decision easier.</p>
+              <p>Research was scattered. The actual trade was still unclear.</p>
             </article>
             <article>
               <span>The product call</span>
-              <p>Make the decision the interface. Every call must say what to do, when it becomes valid, where the idea is wrong and how long it may take.</p>
+              <p>Lead with buy, sell or wait, then show the levels and why.</p>
             </article>
             <article>
               <span>What works now</span>
-              <p>Separate stock and crypto workspaces, live-price freshness checks, Ask Punky, confidence, paper execution, market context and a review loop.</p>
+              <p>Live prices, market context, Ask Punky, paper trades and review.</p>
             </article>
           </div>
 
@@ -174,15 +174,15 @@ export default function Home() {
           <div className="product-proof">
             <article>
               <span>The friction</span>
-              <p>Telegram was where I naturally saved useful things, but retrieval depended on remembering exact words. Images and videos were effectively invisible to search.</p>
+              <p>Saved images and videos were almost impossible to find again.</p>
             </article>
             <article>
               <span>The product call</span>
-              <p>Keep Telegram as the capture habit. Build the better memory around it: visual search, useful browsing and one-click reuse without moving the archive elsewhere.</p>
+              <p>Keep Telegram for capture; add visual search and one-click reuse.</p>
             </article>
             <article>
               <span>What works now</span>
-              <p>OCR, visual descriptions, video and voice transcription, document extraction, semantic search, pinned and saved views, deduplication and reverse send-to-Telegram.</p>
+              <p>OCR, vision, transcription, semantic search, deduplication and resend.</p>
             </article>
           </div>
 
@@ -226,15 +226,15 @@ export default function Home() {
           <div className="product-proof">
             <article>
               <span>The friction</span>
-              <p>Republishing an X article meant rebuilding the same headings, links, images and formatting by hand, then checking whether the right draft was actually live.</p>
+              <p>Moving X articles meant rebuilding every link, image and heading.</p>
             </article>
             <article>
               <span>The product call</span>
-              <p>Exactness matters more than clever rewriting. The system should preserve the source, expose every change and refuse to publish when fidelity cannot be verified.</p>
+              <p>Preserve the source exactly, then make every edit visible.</p>
             </article>
             <article>
               <span>What works now</span>
-              <p>API-only X capture, structured rich-text editing, link previews, media upload, draft reconciliation, duplicate protection, scheduling and publish verification.</p>
+              <p>Capture, rich editing, previews, scheduling and verified publishing.</p>
             </article>
           </div>
 
@@ -255,26 +255,12 @@ export default function Home() {
         <div className="section-shell">
           <div className="vibe-heading">
             <p className="kicker">Vibe coding, honestly</p>
-            <h2 id="vibe-title">Move fast. Keep it useful. Delete the slop.</h2>
+            <h2 id="vibe-title">I move fast. I do not ship slop.</h2>
             <p>
-              I have ADHD. Long, drawn-out workflows lose me, so I use several agents and automate
-              as much of the repetitive work as I can. That gets me from an idea to something real
-              very quickly. It does not lower the bar for what gets shipped.
+              I have ADHD, so I like getting things done quickly and letting agents handle as much
+              repetitive work as possible. Unfinished projects stay local. They go online only when
+              the whole workflow works. If something starts turning into slop, I delete it.
             </p>
-          </div>
-          <div className="vibe-notes">
-            <article>
-              <span>01</span>
-              <div><h3>I do not want to make slop</h3><p>If a project stops solving a real problem and turns into a pile of features, I cut it. A smaller useful thing is better than a bigger fake product.</p></div>
-            </article>
-            <article>
-              <span>02</span>
-              <div><h3>Unfinished work stays local</h3><p>I keep projects on localhost or as local software until the complete path works. Deployment is the last step, not a way to make an unfinished build look real.</p></div>
-            </article>
-            <article>
-              <span>03</span>
-              <div><h3>Agents help me keep momentum</h3><p>I let agents carry research, coding and repetitive checks. I still make the product calls, use the result myself and decide what survives.</p></div>
-            </article>
           </div>
         </div>
       </section>
